@@ -1,0 +1,48 @@
+{
+  "file_pattern": "*.csv",
+  "chunksize": 400000,
+
+  "speed_threshold": 5.0,
+  "dwell_threshold": 120.0,
+  "low_speed_threshold": 20.0,
+
+  "cell_m": 100,
+  "time_bin": "30s",
+  "draw_overlay_sample_n": 120,
+  "min_consecutive_bins": 3,
+
+  "incident_harsh_brake_threshold": 0.1,
+  "incident_stop_rate_threshold": 0.1,
+  "incident_shockwave_threshold": -10.0,
+  "incident_speed_anomaly_threshold": -15.0,
+
+  "bottleneck_occurrence_threshold": 0.3,
+  "bottleneck_speed_threshold": 40.0,
+
+  "incident_time_buffer_min": 15,
+  "incident_kp_tolerance_km": 0.5,
+
+  "incident_target_names": [
+    "事故",
+    "故障車",
+    "落下物",
+    "車線規制",
+    "工事",
+    "渋滞"
+  ],
+
+  "incident_route_filter": "高速３号大高線",
+
+  "kp_bounds_by_direction": {
+    "up": {
+      "kp_min": 1.9,
+      "kp_max": 3.7,
+      "anchor_kp": 3.7
+    },
+    "down": {
+      "kp_min": 2.3,
+      "kp_max": 3.8,
+      "anchor_kp": 2.3
+    }
+  }
+}
